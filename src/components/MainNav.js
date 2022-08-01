@@ -1,4 +1,4 @@
-import "../styles/components/mainNav.scss"
+import "../styles/mainStyle.scss";
 import React from "react";
 import { Link } from "react-router-dom";
 
