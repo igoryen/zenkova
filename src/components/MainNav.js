@@ -1,3 +1,4 @@
+import "../styles/components/mainNav.scss"
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -31,7 +32,7 @@ class MainNav extends React.Component {
     render() {
         return (
             <section>
-                <nav>
+                <nav className="main-nav">
 
                     <ul>
                         <li>

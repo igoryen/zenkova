@@ -1,7 +1,6 @@
-// import "../../styles/Layout/layoutMain.scss";
 import { Outlet } from "react-router-dom";
 import React from "react";
-import MainNav from "./MainNav";
+import MainNav from "../../components/MainNav";
 
 
 class Layout extends React.Component {
