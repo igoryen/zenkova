@@ -10,6 +10,8 @@ section {
 
     .layout-outlet {
         background-color: $color2;
+        display: flex;
+        justify-content: center;
         padding: 1em;
 
         section {
@@ -17,7 +19,7 @@ section {
             display: flex;
             height: 100vh; /* Fallback for browsers that do not support Custom Properties */
             height: calc(var(--vh, 1vh) * 100);
-            justify-content: center;
+            // justify-content: center;
             padding: 1em;
         }
     }
