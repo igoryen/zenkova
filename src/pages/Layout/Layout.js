@@ -1,3 +1,4 @@
+import "../../styles/mainStyle.scss";
 import { Outlet } from "react-router-dom";
 import React from "react";
 import MainNav from "../../components/MainNav";
@@ -23,15 +24,15 @@ class Layout extends React.Component {
 
     render() {
         return (
-            <div className="spaceship">
-
-                <MainNav />
-
-                <section>
+            <div className="layout">
+                <section className="header-body-footer">
                     <header>
                         HEADER
                     </header>
-                    <Outlet />
+                    <MainNav />
+                    <div className="layout-outlet">
+                        <Outlet />
+                    </div>
                     <footer>
                         FOOTER
                     </footer>

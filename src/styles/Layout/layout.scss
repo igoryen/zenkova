@@ -1,0 +1,15 @@
+section {
+    header,
+    footer {
+        background-color: $color3;
+    }
+    &.header-body-footer {
+        background-color: $color4;
+        // padding: 1em;
+    }
+
+    .layout-outlet {
+        background-color: $color4;
+        padding: 1em;
+    }
+}
