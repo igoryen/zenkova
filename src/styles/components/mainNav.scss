@@ -10,8 +10,15 @@
 
     li {
         background-color: $color3;
+        font-size: 1.4em;
+        font-weight: 600;
         list-style: none;
         margin: 0 0.2em;
-        padding: 1em;
+        min-width: 6em;
+        padding: 0.5em;
+        text-align: center;
+        a {
+            text-decoration: none;
+        }
     }
 }

@@ -36,10 +36,10 @@ class MainNav extends React.Component {
 
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/">Главная</Link>
                         </li>
                         <li>
-                            <Link to="/services">Services</Link>
+                            <Link to="/services">Услуги</Link>
                         </li>
 
 
