@@ -33,7 +33,7 @@ class Services extends React.Component {
                 </section>
 
 
-                <section className="page__section_a">
+                <section className="page__section page__section_a">
                     <div className="element heading">
                         <h2>Гавана (160 &euro;)</h2>
                     </div>
@@ -111,7 +111,7 @@ class Services extends React.Component {
                     </div>
                 </section>
 
-                <section className="page__section_b">
+                <section className="page__section page__section_b">
                     <div className="element heading">
                         <h2>Карибы (160 &euro;)</h2>
                     </div>
@@ -122,7 +122,7 @@ class Services extends React.Component {
                     </div>
                 </section>
 
-                <section className="page__section_c">
+                <section className="page__section page__section_c">
                     <div className="element heading">
                         <h2>Город Матансас (130 &euro;)</h2>
                     </div>
@@ -135,7 +135,7 @@ class Services extends React.Component {
                 </section>
 
 
-                <section className="page__section_d">
+                <section className="page__section page__section_d">
                     <div className="element heading">
                         <h2>Города Тринидад и Сьенфуэгос (450 &euro;)</h2>
                     </div>

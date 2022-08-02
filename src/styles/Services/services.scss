@@ -1,3 +1,10 @@
+@mixin bkg_img($url) {
+    background-image: url($url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .services {
     // display: flex;
     align-items: center;
@@ -14,30 +21,55 @@
     .page__heading {
         background-color: $color5;
     }
+
+    .page__section {
+        position: relative;
+        &:before {
+            content: " ";
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
     .page__section_a {
         // Habana
-        background-color: $color2;
+
+        // position: relative;
+        &:before {
+            @include bkg_img("../../../public/images/havana-wide.png");
+        }
     }
 
     .page__section_b {
         // Habana
-        background-color: $color3;
+        &:before {
+            @include bkg_img("../../../public/images/cayo-coco.jpg");
+        }
     }
 
     .page__section_c {
         // Habana
-        background-color: $color4;
+        &:before {
+            @include bkg_img("../../../public/images/matanzas.jpg");
+        }
     }
 
     .page__section_d {
         // Habana
-        background-color: $color1;
+        &:before {
+            @include bkg_img("../../../public/images/trinidad.jpg");
+        }
     }
 
     .element {
         background-color: $color1;
         margin: 1em 0;
         max-width: 800px;
+        z-index: 1; // because of bkg img is semi-opaque.
     }
 
     .part {
