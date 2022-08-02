@@ -105,3 +105,14 @@
         // justify-content: flex-start;
     }
 }
+
+@media only screen and (min-width: 220px) {
+    .services .part {
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 720px) {
+    .services .part {
+        flex-direction: row;
+    }
+}
