@@ -24,7 +24,7 @@ class Layout extends React.Component {
     render() {
         return (
             <div className="layout">
-                <section className="header-body-footer">
+                <div className="header-body-footer">
                     <header>
                         HEADER
                     </header>
@@ -35,7 +35,7 @@ class Layout extends React.Component {
                     <footer>
                         FOOTER
                     </footer>
-                </section>
+                </div>
             </div>
         )
     }

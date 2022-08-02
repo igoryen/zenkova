@@ -31,7 +31,7 @@ class MainNav extends React.Component {
 
     render() {
         return (
-            <section>
+            <div>
                 <nav className="main-nav">
 
                     <ul>
@@ -46,7 +46,7 @@ class MainNav extends React.Component {
 
                     </ul>
                 </nav>
-            </section>
+            </div>
         );
     }
 }

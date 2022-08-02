@@ -24,7 +24,7 @@ class Services extends React.Component {
 
     render() {
         return (
-            <section className="services">
+            <div className="services">
 
 
                 <div className="element heading">
@@ -160,7 +160,7 @@ class Services extends React.Component {
 
 
 
-            </section>
+            </div>
         );
     };
 }
