@@ -29,8 +29,12 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>Hello from Home</h1>
+            <div className="home">
+                <section className="page__heading">
+                    <div className="element heading">
+                        <h1>Ваш гид по Кубе</h1>
+                    </div>
+                </section>
 
             </div>
         );
