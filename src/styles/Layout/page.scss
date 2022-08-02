@@ -1,0 +1,57 @@
+.page {
+    // display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0.5em;
+        width: 100%;
+    }
+
+    .page__heading {
+        background-color: $color5;
+    }
+
+    .element {
+        background-color: $color1;
+        margin: 1em 0;
+        max-width: 800px;
+        z-index: 1; // because of bkg img is semi-opaque.
+    }
+
+    .part {
+        background-color: $color5;
+        display: flex;
+        // justify-content: space-between;
+        margin: 1em 0.5em;
+    }
+    .part-bit {
+        background-color: $color1;
+        flex-grow: 1;
+        // flex-basis: 1em;
+        flex-shrink: 1;
+        margin: 0.3em 0.3em;
+        padding: 0.3em 0.3em;
+
+        ol {
+            background-color: $color4;
+            margin-left: 2em;
+        }
+    }
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+
+    .heading {
+        text-align: center;
+    }
+
+    .description {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-start;
+    }
+}

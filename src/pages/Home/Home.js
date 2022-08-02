@@ -1,4 +1,5 @@
 import React from "react";
+import Testimonials from "../../components/Testimonials";
 
 class Home extends React.Component {
     constructor(props) {
@@ -29,12 +30,14 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="home">
+            <div className="page home">
                 <section className="page__heading">
                     <div className="element heading">
                         <h1>Ваш гид по Кубе</h1>
                     </div>
                 </section>
+
+                <Testimonials />
 
             </div>
         );

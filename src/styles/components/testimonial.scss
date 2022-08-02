@@ -1,0 +1,45 @@
+.testimonial {
+    &__group {
+        background-color: $color1;
+        padding: 1em;
+    }
+    &__element {
+        background-color: $color2;
+        padding: 1em;
+
+        blockquote {
+            background-color: $color1;
+            font-family: "Caveat", cursive;
+            font-size: 2em;
+            line-height: 1.2;
+            padding: 1em;
+        }
+    }
+
+    &__author {
+        background-color: $color3;
+        display: flex;
+        padding: 1em;
+
+        > div {
+            background-color: $color4;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+    }
+}
+
+@media only screen and (min-width: $widthSmallest) {
+    .testimonial {
+        &__element {
+            max-width: 300px;
+        }
+    }
+}
+@media only screen and (min-width: $width2ndSmall) {
+    .testimonial {
+        &__element {
+            max-width: 500px;
+        }
+    }
+}
