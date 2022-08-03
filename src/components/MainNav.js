@@ -41,6 +41,9 @@ class MainNav extends React.Component {
                         <li>
                             <Link to="/services">Услуги</Link>
                         </li>
+                        <li>
+                            <Link to="/contacts">Контакты</Link>
+                        </li>
 
 
 

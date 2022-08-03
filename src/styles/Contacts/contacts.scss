@@ -1,0 +1,66 @@
+.contact-logo {
+    img {
+        width: 2em;
+        margin-right: 0.5em;
+    }
+    // border: 3px solid red;
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+// https://imagecompressor.com/
+@media only screen and (min-width: $widthSmallest) {
+    .page__section {
+        &_f {
+            &:before {
+                @include bkg_img(
+                    "../../../public/images/places/varadero-min.jpg"
+                );
+            }
+        }
+        // &_b {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/cayo-coco-min.jpg");
+        //     }
+        // }
+        // &_c {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/matanzas-min.jpg");
+        //     }
+        // }
+        // &_d {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/trinidad-min.jpg");
+        //     }
+        // }
+    }
+}
+@media only screen and (min-width: $width2ndSmall) {
+    .page__section {
+        &_f {
+            &:before {
+                @include bkg_img(
+                    "../../../public/images/places/varadero-large.jpg"
+                );
+            }
+        }
+        // &_b {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/cayo-coco-large.jpg");
+        //     }
+        // }
+        // &_c {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/matanzas-large.jpg");
+        //     }
+        // }
+        // &_d {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/trinidad-large.jpg");
+        //     }
+        // }
+    }
+}
