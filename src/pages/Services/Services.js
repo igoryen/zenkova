@@ -1,4 +1,5 @@
 import React from "react";
+import CarRide from "../../components/CarRide";
 import Testimonials from "../../components/Testimonials";
 
 class Services extends React.Component {
@@ -27,6 +28,8 @@ class Services extends React.Component {
         return (
 
             <div className="page services">
+
+                <CarRide />
 
                 <section className="page__heading">
                     <div className="element heading">
