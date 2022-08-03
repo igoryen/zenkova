@@ -29,14 +29,13 @@ class Services extends React.Component {
 
             <div className="page services">
 
-                <CarRide />
-
                 <section className="page__heading">
                     <div className="element heading">
                         <h1>Экскурсии</h1>
                     </div>
                 </section>
 
+                <CarRide />
 
                 <section className="page__section page__section_a">
                     <div className="element heading">
