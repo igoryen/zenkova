@@ -50,7 +50,7 @@ class Home extends React.Component {
                                 <div className="author__photo"></div>
                             </div>
 
-                            <div className="part-bit">
+                            <div className="part-bit part-bit_centered">
                                 <ul>
                                     <li>Многолетний опыт проживания на Кубе</li>
                                     <li>Глубокие знания испанского языка, истории и культуры страны</li>

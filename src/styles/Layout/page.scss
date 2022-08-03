@@ -41,6 +41,14 @@
             background-color: $color4;
             margin-left: 2em;
         }
+        &_centered {
+            ul {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+            }
+        }
     }
     // display: flex;
     // flex-direction: column;
