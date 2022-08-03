@@ -1,0 +1,155 @@
+@keyframes moveLeft {
+    0% {
+        left: -80%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes bumpyRide {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(3deg);
+        transform-origin: bottom right;
+    }
+    20% {
+        transform: rotate(-3deg);
+        transform-origin: bottom left;
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-1px);
+    }
+    80% {
+        transform: translateY(1px);
+    }
+    90% {
+        transform: translateY(0);
+    }
+}
+
+.car-ride {
+    display: block;
+    height: 60px;
+    background-color: rgb(133, 232, 241);
+    position: relative;
+}
+
+.moving-object {
+    display: block;
+
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+
+    animation-name: moveLeft;
+
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.moving-object-a {
+    background-color: rgb(218, 226, 183);
+    height: 50px;
+    width: 80px;
+}
+
+.moving-object-b {
+    background-color: rgb(255, 0, 200);
+    margin-left: 80px;
+    height: 30px;
+    width: 50px;
+}
+.moving-object-c {
+    background-color: rgb(136, 255, 0);
+    margin-left: 141px;
+    height: 40px;
+    width: 50px;
+}
+
+.moving-object-d {
+    background-color: rgb(238, 255, 0);
+    margin-left: 300px;
+    height: 30px;
+    width: 50px;
+}
+.car {
+    position: absolute;
+    top: -3px;
+    z-index: 7;
+    &:after {
+        content: "\1F697";
+        font-size: 40px;
+    }
+    animation-name: bumpyRide;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.sea {
+    display: block;
+    width: 100%;
+    height: 23px;
+    background-color: rgb(67, 143, 190);
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+.sail {
+    background-color: transparent;
+    border-bottom: solid 5px transparent;
+    border-left: solid 10px white;
+    border-right: solid 10px transparent;
+    border-top: solid 20px transparent;
+    bottom: 16px;
+    display: block;
+    height: 0;
+    left: 10px;
+    margin-left: 83px;
+    position: absolute;
+    transform: rotate(3deg);
+    width: 0;
+    z-index: 4;
+}
+
+.road {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: burlywood;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+}
+
+@media only screen and (min-width: $widthSmallest) {
+    .moving-object {
+        animation-duration: 3s;
+    }
+}
+@media only screen and (min-width: $width2ndSmall) {
+    .moving-object {
+        animation-duration: 5s;
+    }
+}
