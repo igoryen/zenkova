@@ -1,8 +1,8 @@
-$color1: #ffcc6680;
-$color2: #99e6ff80;
-$color3: #00ff9980;
-$color4: #ffffff80;
-$color5: #ff471a80;
+$color1: #ffcc00;
+$color2: #00cc00;
+$color3: #66ccff;
+$color4: #e6f7ff;
+$color5: #ff33cc;
 
 // colour version 2 for testing
 // $color1: #ffffff80;
@@ -12,15 +12,20 @@ $color5: #ff471a80;
 // $color5: #ffffff80;
 
 // colours version 3 for testing
-$color1: transparent;
-$color2: transparent;
-$color3: transparent;
-$color4: transparent;
-$color5: transparent;
+// $color1: transparent;
+// $color2: transparent;
+// $color3: transparent;
+// $color4: transparent;
+// $color5: transparent;
 
 //===========================
 $widthSmallest: 220px;
 $width2ndSmall: 720px;
+
+//=======================
+
+$testPaddSize: 1em;
+$testMargSize: 1em;
 
 //=======================
 @mixin bkg_img($url) {
