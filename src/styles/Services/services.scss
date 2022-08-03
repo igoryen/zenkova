@@ -1,10 +1,3 @@
-@mixin bkg_img($url) {
-    background-image: url($url);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .page {
     .page__section {
         position: relative;
@@ -23,9 +16,6 @@
 
 // https://imagecompressor.com/
 @media only screen and (min-width: $widthSmallest) {
-    .services .part {
-        flex-direction: column;
-    }
     .page__section {
         &_a {
             &:before {
@@ -50,9 +40,6 @@
     }
 }
 @media only screen and (min-width: $width2ndSmall) {
-    .services .part {
-        flex-direction: row;
-    }
     .page__section {
         &_a {
             &:before {

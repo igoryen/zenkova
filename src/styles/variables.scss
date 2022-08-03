@@ -4,13 +4,28 @@ $color3: #00ff9980;
 $color4: #ffffff80;
 $color5: #ff471a80;
 
-// section 2 for testing
+// colour version 2 for testing
 // $color1: #ffffff80;
 // $color2: #ffffff80;
 // $color3: #ffffff80;
 // $color4: #ffffff80;
 // $color5: #ffffff80;
 
+// colours version 3 for testing
+$color1: transparent;
+$color2: transparent;
+$color3: transparent;
+$color4: transparent;
+$color5: transparent;
+
 //===========================
 $widthSmallest: 220px;
 $width2ndSmall: 720px;
+
+//=======================
+@mixin bkg_img($url) {
+    background-image: url($url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -36,7 +36,8 @@
         margin: 0.3em 0.3em;
         padding: 0.3em 0.3em;
 
-        ol {
+        ol,
+        ul {
             background-color: $color4;
             margin-left: 2em;
         }
@@ -53,5 +54,16 @@
         // display: flex;
         // flex-direction: column;
         // justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: $widthSmallest) {
+    .page .part {
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: $width2ndSmall) {
+    .page .part {
+        flex-direction: row;
     }
 }

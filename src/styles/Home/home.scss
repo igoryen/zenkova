@@ -1,0 +1,65 @@
+$authorPhotoSize: 300px;
+
+.author__photo {
+    background-image: url("../../../public/images/persons/author_w_flag-square.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: $authorPhotoSize;
+    width: $authorPhotoSize;
+    border-radius: 50%;
+}
+
+// https://imagecompressor.com/
+@media only screen and (min-width: $widthSmallest) {
+    .page__section {
+        &_e {
+            &:before {
+                @include bkg_img(
+                    "../../../public/images/places/cuba_map_large.jpg"
+                );
+            }
+        }
+        // &_b {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/cayo-coco-min.jpg");
+        //     }
+        // }
+        // &_c {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/matanzas-min.jpg");
+        //     }
+        // }
+        // &_d {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/trinidad-min.jpg");
+        //     }
+        // }
+    }
+}
+@media only screen and (min-width: $width2ndSmall) {
+    .page__section {
+        &_e {
+            &:before {
+                @include bkg_img(
+                    "../../../public/images/places/cuba_map_min.jpg"
+                );
+            }
+        }
+        // &_b {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/cayo-coco-large.jpg");
+        //     }
+        // }
+        // &_c {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/matanzas-large.jpg");
+        //     }
+        // }
+        // &_d {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/trinidad-large.jpg");
+        //     }
+        // }
+    }
+}

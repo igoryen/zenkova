@@ -38,6 +38,33 @@ class Home extends React.Component {
                     </div>
                 </section>
 
+                <section className="page__section page__section_e">
+                    <div className="element heading">
+                        <h2>Людмила Зенкова</h2>
+                    </div>
+
+                    <div className="element description">
+
+                        <div className="part">
+                            <div className="part-bit">
+                                <div className="author__photo"></div>
+                            </div>
+
+                            <div className="part-bit">
+                                <ul>
+                                    <li>Многолетний опыт проживания на Кубе</li>
+                                    <li>Глубокие знания испанского языка, истории и культуры страны</li>
+                                    <li>Большой стаж работы экскурсоводом в различных регионах Кубы</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </section>
+
                 <Testimonials />
 
             </div>
