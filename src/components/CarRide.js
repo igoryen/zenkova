@@ -30,6 +30,9 @@ class CarRide extends React.Component {
                 <div className="moving-object moving-object-b"></div>
                 <div className="moving-object moving-object-c"></div>
                 <div className="moving-object moving-object-d"></div>
+                <div className="moving-object moving-object-e"></div>
+                <div className="moving-object moving-object-f"></div>
+                <div className="moving-object moving-object-g"></div>
                 <div className="sail"></div>
                 <div className="sea"></div>
                 <div className="car"></div>
