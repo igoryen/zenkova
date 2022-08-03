@@ -19,44 +19,62 @@
             width: 100%;
         }
     }
-    .page__section_a {
-        // Habana
-
-        // position: relative;
-        &:before {
-            @include bkg_img("../../../public/images/havana-wide.png");
-        }
-    }
-
-    .page__section_b {
-        // Habana
-        &:before {
-            @include bkg_img("../../../public/images/cayo-coco.jpg");
-        }
-    }
-
-    .page__section_c {
-        // Habana
-        &:before {
-            @include bkg_img("../../../public/images/matanzas.jpg");
-        }
-    }
-
-    .page__section_d {
-        // Habana
-        &:before {
-            @include bkg_img("../../../public/images/trinidad.jpg");
-        }
-    }
 }
 
+// https://imagecompressor.com/
 @media only screen and (min-width: $widthSmallest) {
     .services .part {
         flex-direction: column;
+    }
+    .page__section {
+        &_a {
+            &:before {
+                @include bkg_img("../../../public/images/havana-wide-min.png");
+            }
+        }
+        &_b {
+            &:before {
+                @include bkg_img("../../../public/images/cayo-coco-min.jpg");
+            }
+        }
+        &_c {
+            &:before {
+                @include bkg_img("../../../public/images/matanzas-min.jpg");
+            }
+        }
+        &_d {
+            &:before {
+                @include bkg_img("../../../public/images/trinidad-min.jpg");
+            }
+        }
     }
 }
 @media only screen and (min-width: $width2ndSmall) {
     .services .part {
         flex-direction: row;
+    }
+    .page__section {
+        &_a {
+            &:before {
+                @include bkg_img(
+                    "../../../public/images/havana-wide-large.png"
+                );
+            }
+        }
+        &_b {
+            &:before {
+                @include bkg_img("../../../public/images/cayo-coco-large.jpg");
+            }
+        }
+        &_c {
+            &:before {
+                @include bkg_img("../../../public/images/matanzas-large.jpg");
+            }
+        }
+        &_d {
+            &:before {
+                @include bkg_img("../../../public/images/trinidad-large.jpg");
+            }
+        }
     }
 }
