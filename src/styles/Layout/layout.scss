@@ -9,18 +9,18 @@ div {
     }
 
     .layout-outlet {
-        background-color: $color2;
+        // background-color: $color2; // debug
         display: flex;
         justify-content: center;
-        padding: 1em;
+        // padding: 1em; // debug
 
         > div {
-            background-color: $color4;
+            // background-color: $color4; // debug
             display: flex;
             // height: 100vh; /* Fallback for browsers that do not support Custom Properties */
             // height: calc(var(--vh, 1vh) * 100);
             // justify-content: center;
-            padding: 1em;
+            // padding: 1em; // debug
             width: 100%;
         }
     }

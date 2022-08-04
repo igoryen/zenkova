@@ -7,7 +7,10 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin: 0.5em;
+        // margin-top: 0.5em;
+        // margin-right: 0.5em;
+        // margin-bottom: 0.5em;
+        // margin-left: 0.5em;
         width: 100%;
     }
 
@@ -114,6 +117,67 @@
         // display: flex;
         // flex-direction: column;
         // justify-content: flex-start;
+    }
+}
+
+$sectionBorderWidth: 1em;
+
+.page__section {
+    &_a {
+        border-top: $sectionBorderWidth $color5 solid;
+        border-right: $sectionBorderWidth $color5 solid;
+        border-bottom: $sectionBorderWidth $color5 solid;
+        border-left: $sectionBorderWidth $color5 solid;
+
+        .heading {
+            h2 {
+                background-color: $color5;
+                padding-right: 1em;
+                padding-left: 1em;
+            }
+        }
+    }
+    &_b {
+        border-top: 1em $color1 solid;
+        border-right: 1em $color1 solid;
+        border-bottom: 1em $color1 solid;
+        border-left: 1em $color1 solid;
+
+        .heading {
+            h2 {
+                background-color: $color1;
+                padding-right: 1em;
+                padding-left: 1em;
+            }
+        }
+    }
+    &_c {
+        border-top: 1em $color2 solid;
+        border-right: 1em $color2 solid;
+        border-bottom: 1em $color2 solid;
+        border-left: 1em $color2 solid;
+
+        .heading {
+            h2 {
+                background-color: $color2;
+                padding-right: 1em;
+                padding-left: 1em;
+            }
+        }
+    }
+    &_d {
+        border-top: 1em $color3 solid;
+        border-right: 1em $color3 solid;
+        border-bottom: 1em $color3 solid;
+        border-left: 1em $color3 solid;
+
+        .heading {
+            h2 {
+                background-color: $color3;
+                padding-right: 1em;
+                padding-left: 1em;
+            }
+        }
     }
 }
 
