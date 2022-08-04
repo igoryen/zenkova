@@ -14,12 +14,11 @@
         font-weight: 600;
         list-style: none;
         margin: 0 0.2em;
-        min-width: 6em;
-        // padding: 0.5em;
         text-align: center;
+        display: flex;
 
         a {
-            // min-width: 6em;
+            width: 100%;
             padding: 0.5em;
             display: flex;
             justify-content: center;
@@ -48,6 +47,27 @@
                 &:hover {
                     background-color: $color3light;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $widthSmallest) {
+    .main-nav {
+        li {
+            width: 100%;
+            a {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $width2ndSmall) {
+    .main-nav {
+        li {
+            width: 20%;
+            a {
+                font-size: 1em;
             }
         }
     }
