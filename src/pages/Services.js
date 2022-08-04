@@ -1,6 +1,6 @@
 import React from "react";
-import CarRide from "../../components/CarRide";
-import Testimonials from "../../components/Testimonials";
+import CarRide from "../components/CarRide";
+import Testimonials from "../components/Testimonials";
 
 class Services extends React.Component {
     constructor(props) {
