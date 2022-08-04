@@ -1,10 +1,10 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
-import imgCayoCoco from "../images/cayo-coco-min.jpg";
-import imgMatanzas from "../images/matanzas-min.jpg";
-import imgTrinidad from "../images/trinidad-min.jpg";
+import CarRide from "../components/CarRide";
+import Testimonials from "../components/Testimonials";
 
+// carousel for Habana
 import imgCapitolio from "../images/slideshow/habana/capitolio.jpg";
 import imgCastillio from "../images/slideshow/habana/castillo.jpg";
 import imgCatedral from "../images/slideshow/habana/catedral_de_la_habana.jpg";
@@ -17,11 +17,26 @@ import imgNight from "../images/slideshow/habana/night.jpg";
 import imgQuixote from "../images/slideshow/habana/quixote.jpg";
 import imgTerraced from "../images/slideshow/habana/terraced_houses.jpg";
 
+// carousel for Matanzas
+import imgSeverino from "../images/slideshow/matanzas/Castle-of-San-Severino-Matanzas-Cuba-18.jpg";
+import imgMatanzas1 from "../images/slideshow/matanzas/Matanzas_from_Ermita_de_Monserrate_church.jpg";
+import imgMatanzasOver from "../images/slideshow/matanzas/Matanzas-over.jpg";
+import imgMatanzas0 from "../images/slideshow/matanzas/Matanzas.jpg";
+import imgMatanzas2 from "../images/slideshow/matanzas/Matanzas2.jpg";
 
+// carousel Trinidad y Cienfuegos
+import imgCienJagua from "../images/slideshow/trinidad-cien/cien-jagua.jpg";
+import imgCienStatue from "../images/slideshow/trinidad-cien/cien-statue.jpg";
+import imgCienView from "../images/slideshow/trinidad-cien/cien-view.jpeg";
+import imgCienMalecon from "../images/slideshow/trinidad-cien/Cienfuegos-Malecon.jpg";
+import imgCienOver from "../images/slideshow/trinidad-cien/cienfuegos-over.jpg";
+import imgCien2 from "../images/slideshow/trinidad-cien/cienfuegos2.jpg";
+import imgTrinAbove from "../images/slideshow/trinidad-cien/trinidad-above.jpg";
+import imgTrinConvent from "../images/slideshow/trinidad-cien/trinidad-convent.jpg";
+import imgTrinPark from "../images/slideshow/trinidad-cien/trinidad-park.jpg";
+import imgTrinNight from "../images/slideshow/trinidad-cien/Trinidad-sundown.jpg";
+import imgTrinTemple from "../images/slideshow/trinidad-cien/trinidad-temple.jpg";
 
-
-import CarRide from "../components/CarRide";
-import Testimonials from "../components/Testimonials";
 
 
 class Services extends React.Component {
@@ -47,10 +62,10 @@ class Services extends React.Component {
     }
 
     render() {
-
+        // https://github.com/maxmarinich/react-alice-carousel
         const handleDragStart = (e) => e.preventDefault();
 
-        const items = [
+        const itemsHabana = [
             <img src={imgCapitolio} onDragStart={handleDragStart} role="presentation" alt="Capitolio" className="alice-carousel" />,
             <img src={imgCastillio} onDragStart={handleDragStart} role="presentation" alt="Castilio" className="alice-carousel" />,
             <img src={imgCatedral} onDragStart={handleDragStart} role="presentation" alt="Catedral" className="alice-carousel" />,
@@ -62,6 +77,29 @@ class Services extends React.Component {
             <img src={imgNight} onDragStart={handleDragStart} role="presentation" alt="Night" className="alice-carousel" />,
             <img src={imgQuixote} onDragStart={handleDragStart} role="presentation" alt="Quixote" className="alice-carousel" />,
             <img src={imgTerraced} onDragStart={handleDragStart} role="presentation" alt="Terraced houses" className="alice-carousel" />,
+        ];
+
+        const itemsMatanzas = [
+            <img src={imgSeverino} onDragStart={handleDragStart} role="presentation" alt="Severino" className="alice-carousel" />,
+            <img src={imgMatanzas1} onDragStart={handleDragStart} role="presentation" alt="Castilio" className="alice-carousel" />,
+            <img src={imgMatanzasOver} onDragStart={handleDragStart} role="presentation" alt="Catedral" className="alice-carousel" />,
+            <img src={imgMatanzas0} onDragStart={handleDragStart} role="presentation" alt="Cecilia" className="alice-carousel" />,
+            <img src={imgMatanzas2} onDragStart={handleDragStart} role="presentation" alt="Cemeterio" className="alice-carousel" />,
+
+        ];
+
+        const itemsTriCien = [
+            <img src={imgCienJagua} onDragStart={handleDragStart} role="presentation" alt="Jagua" className="alice-carousel" />,
+            <img src={imgCienStatue} onDragStart={handleDragStart} role="presentation" alt="Statue" className="alice-carousel" />,
+            <img src={imgCienView} onDragStart={handleDragStart} role="presentation" alt="CienView" className="alice-carousel" />,
+            <img src={imgCienMalecon} onDragStart={handleDragStart} role="presentation" alt="CienMalecon" className="alice-carousel" />,
+            <img src={imgCienOver} onDragStart={handleDragStart} role="presentation" alt="Cien over" className="alice-carousel" />,
+            <img src={imgCien2} onDragStart={handleDragStart} role="presentation" alt="Cien 2" className="alice-carousel" />,
+            <img src={imgTrinAbove} onDragStart={handleDragStart} role="presentation" alt="Trin above" className="alice-carousel" />,
+            <img src={imgTrinConvent} onDragStart={handleDragStart} role="presentation" alt="Trin convent" className="alice-carousel" />,
+            <img src={imgTrinPark} onDragStart={handleDragStart} role="presentation" alt="Trin park" className="alice-carousel" />,
+            <img src={imgTrinNight} onDragStart={handleDragStart} role="presentation" alt="Trin night" className="alice-carousel" />,
+            <img src={imgTrinTemple} onDragStart={handleDragStart} role="presentation" alt="Trin temple" className="alice-carousel" />,
         ];
 
         const responsivity = {
@@ -93,7 +131,7 @@ class Services extends React.Component {
 
                     <div className="my-carousel">
                         <AliceCarousel mouseTracking
-                            items={items}
+                            items={itemsHabana}
                             autoPlay='true'
                             infinite='true'
                             autoPlayInterval='2000'
@@ -194,6 +232,20 @@ class Services extends React.Component {
                         <h2>Город Матансас (130 &euro;)</h2>
                     </div>
 
+                    <div className="my-carousel">
+                        <AliceCarousel mouseTracking
+                            items={itemsMatanzas}
+                            autoPlay='true'
+                            infinite='true'
+                            autoPlayInterval='2000'
+                            autoHeight='true'
+                            responsive={responsivity}
+                            disableButtonsControls='false'
+                        // paddingLeft="10"
+                        // paddingRight='10'
+                        />
+                    </div>
+
                     <div className="element description">
                         <p>
                             (город, река, пещера)
@@ -205,6 +257,20 @@ class Services extends React.Component {
                 <section className="page__section page__section_d">
                     <div className="element heading">
                         <h2>Города Тринидад и Сьенфуэгос (450 &euro;)</h2>
+                    </div>
+
+                    <div className="my-carousel">
+                        <AliceCarousel mouseTracking
+                            items={itemsTriCien}
+                            autoPlay='true'
+                            infinite='true'
+                            autoPlayInterval='2000'
+                            autoHeight='true'
+                            responsive={responsivity}
+                            disableButtonsControls='false'
+                        // paddingLeft="10"
+                        // paddingRight='10'
+                        />
                     </div>
 
                     <div className="element description">
