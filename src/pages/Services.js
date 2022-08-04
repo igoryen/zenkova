@@ -1,6 +1,28 @@
 import React from "react";
+import AliceCarousel from "react-alice-carousel";
+import 'react-alice-carousel/lib/alice-carousel.css';
+import imgCayoCoco from "../images/cayo-coco-min.jpg";
+import imgMatanzas from "../images/matanzas-min.jpg";
+import imgTrinidad from "../images/trinidad-min.jpg";
+
+import imgCapitolio from "../images/slideshow/habana/capitolio.jpg";
+import imgCastillio from "../images/slideshow/habana/castillo.jpg";
+import imgCatedral from "../images/slideshow/habana/catedral_de_la_habana.jpg";
+import imgCecilia from "../images/slideshow/habana/sesilia.jpg";
+import imgCemeterio from "../images/slideshow/habana/cemeterio_de_cristobal_colon.jpg";
+import imgErnesto from "../images/slideshow/habana/ernesto.jpg";
+import imgHabanaVieja from "../images/slideshow/habana/habana_vieja.jpg";
+import imgHemingway from "../images/slideshow/habana/hemingway.jpg";
+import imgNight from "../images/slideshow/habana/night.jpg";
+import imgQuixote from "../images/slideshow/habana/quixote.jpg";
+import imgTerraced from "../images/slideshow/habana/terraced_houses.jpg";
+
+
+
+
 import CarRide from "../components/CarRide";
 import Testimonials from "../components/Testimonials";
+
 
 class Services extends React.Component {
     constructor(props) {
@@ -25,6 +47,33 @@ class Services extends React.Component {
     }
 
     render() {
+
+        const handleDragStart = (e) => e.preventDefault();
+
+        const items = [
+            <img src={imgCapitolio} onDragStart={handleDragStart} role="presentation" alt="Capitolio" className="alice-carousel" />,
+            <img src={imgCastillio} onDragStart={handleDragStart} role="presentation" alt="Castilio" className="alice-carousel" />,
+            <img src={imgCatedral} onDragStart={handleDragStart} role="presentation" alt="Catedral" className="alice-carousel" />,
+            <img src={imgCecilia} onDragStart={handleDragStart} role="presentation" alt="Cecilia" className="alice-carousel" />,
+            <img src={imgCemeterio} onDragStart={handleDragStart} role="presentation" alt="Cemeterio" className="alice-carousel" />,
+            <img src={imgErnesto} onDragStart={handleDragStart} role="presentation" alt="Ernesto" className="alice-carousel" />,
+            <img src={imgHabanaVieja} onDragStart={handleDragStart} role="presentation" alt="Habana Vieja" className="alice-carousel" />,
+            <img src={imgHemingway} onDragStart={handleDragStart} role="presentation" alt="Hemingway" className="alice-carousel" />,
+            <img src={imgNight} onDragStart={handleDragStart} role="presentation" alt="Night" className="alice-carousel" />,
+            <img src={imgQuixote} onDragStart={handleDragStart} role="presentation" alt="Quixote" className="alice-carousel" />,
+            <img src={imgTerraced} onDragStart={handleDragStart} role="presentation" alt="Terraced houses" className="alice-carousel" />,
+        ];
+
+        const responsivity = {
+            0: {
+                items: 1,
+            },
+            1024: {
+                items: 3
+            }
+        };
+
+
         return (
 
             <div className="page services">
@@ -40,6 +89,20 @@ class Services extends React.Component {
                 <section className="page__section page__section_a">
                     <div className="element heading">
                         <h2>Гавана (160 &euro;)</h2>
+                    </div>
+
+                    <div className="my-carousel">
+                        <AliceCarousel mouseTracking
+                            items={items}
+                            autoPlay='true'
+                            infinite='true'
+                            autoPlayInterval='2000'
+                            autoHeight='true'
+                            responsive={responsivity}
+                            disableButtonsControls='false'
+                        // paddingLeft="10"
+                        // paddingRight='10'
+                        />
                     </div>
 
                     <div className="element description">
