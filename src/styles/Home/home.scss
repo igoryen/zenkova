@@ -11,6 +11,19 @@ $authorPhotoSize: 300px;
     width: $authorPhotoSize;
 }
 
+.page__section {
+    &_e {
+        .heading {
+            h2 {
+                background-color: rgba(255, 255, 255, 0.5);
+                padding-left: 1em;
+                padding-right: 1em;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
 // https://imagecompressor.com/
 @media only screen and (min-width: $widthSmallest) {
     .page__section {
