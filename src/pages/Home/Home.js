@@ -46,15 +46,17 @@ class Home extends React.Component {
                     <div className="element description">
 
                         <div className="part">
-                            <div className="part-bit">
+                            <div className="part-bit part-bit_a">
                                 <div className="author__photo"></div>
                             </div>
 
                             <div className="part-bit part-bit_centered">
                                 <ul>
-                                    <li>Многолетний опыт проживания на Кубе</li>
-                                    <li>Глубокие знания испанского языка, истории и культуры страны</li>
-                                    <li>Большой стаж работы экскурсоводом в различных регионах Кубы</li>
+                                    <li className="stripe blue">Многолетний опыт проживания на Кубе</li>
+                                    <li className="stripe white">&nbsp;</li>
+                                    <li className="stripe blue">Глубокие знания испанского языка, истории и культуры страны</li>
+                                    <li className="stripe white">&nbsp;</li>
+                                    <li className="stripe blue">Большой стаж работы экскурсоводом в различных регионах Кубы</li>
                                 </ul>
                             </div>
 
