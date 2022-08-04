@@ -11,6 +11,18 @@
     text-decoration: none;
 }
 
+.page__section {
+    &_f {
+        .part {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 0.5em 0.8em;
+            a {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
 // https://imagecompressor.com/
 @media only screen and (min-width: $widthSmallest) {
     .page__section {
