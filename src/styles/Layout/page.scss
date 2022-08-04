@@ -128,6 +128,7 @@
                 margin-right: unset;
             }
             &_centered {
+                border-left: 0.5em solid rgba(255, 0, 0, 0.7);
                 ul {
                     margin-left: 0;
                 }
@@ -177,6 +178,7 @@
                 margin-right: -80px;
             }
             &_centered {
+                border-left: none;
                 li {
                     &.stripe {
                         padding-left: 72px;
