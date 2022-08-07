@@ -67,26 +67,26 @@
 // https://imagecompressor.com/
 @media only screen and (min-width: $widthSmallest) {
     .page__section {
-        &_a {
-            &:before {
-                @include bkg_img("../../../public/images/havana-wide-min.png");
-            }
-        }
-        &_b {
-            &:before {
-                @include bkg_img("../../../public/images/cayo-coco-min.jpg");
-            }
-        }
-        &_c {
-            &:before {
-                @include bkg_img("../../../public/images/matanzas-min.jpg");
-            }
-        }
-        &_d {
-            &:before {
-                @include bkg_img("../../../public/images/trinidad-min.jpg");
-            }
-        }
+        // &_a {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/havana-wide-min.png");
+        //     }
+        // }
+        // &_b {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/cayo-coco-min.jpg");
+        //     }
+        // }
+        // &_c {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/matanzas-min.jpg");
+        //     }
+        // }
+        // &_d {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/trinidad-min.jpg");
+        //     }
+        // }
     }
     .page__section_tabs {
         display: block !important;
@@ -94,28 +94,28 @@
 }
 @media only screen and (min-width: $width2ndSmall) {
     .page__section {
-        &_a {
-            &:before {
-                @include bkg_img(
-                    "../../../public/images/havana-wide-large.png"
-                );
-            }
-        }
-        &_b {
-            &:before {
-                @include bkg_img("../../../public/images/cayo-coco-large.jpg");
-            }
-        }
-        &_c {
-            &:before {
-                @include bkg_img("../../../public/images/matanzas-large.jpg");
-            }
-        }
-        &_d {
-            &:before {
-                @include bkg_img("../../../public/images/trinidad-large.jpg");
-            }
-        }
+        // &_a {
+        //     &:before {
+        //         @include bkg_img(
+        //             "../../../public/images/havana-wide-large.png"
+        //         );
+        //     }
+        // }
+        // &_b {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/cayo-coco-large.jpg");
+        //     }
+        // }
+        // &_c {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/matanzas-large.jpg");
+        //     }
+        // }
+        // &_d {
+        //     &:before {
+        //         @include bkg_img("../../../public/images/trinidad-large.jpg");
+        //     }
+        // }
     }
     .page__section_tabs {
         display: none !important;

@@ -28,23 +28,23 @@ $authorPhotoSize: 300px;
 // https://imagecompressor.com/
 @media only screen and (min-width: $widthSmallest) {
     .page__section {
-        &_e {
-            &:before {
-                @include bkg_img(
-                    "../../../public/images/places/cuba_map_large.jpg"
-                );
-            }
-        }
+        // &_e {
+        //     &:before {
+        //         @include bkg_img(
+        //             "../../../public/images/places/cuba_map_large.jpg"
+        //         );
+        //     }
+        // }
     }
 }
 @media only screen and (min-width: $width2ndSmall) {
     .page__section {
-        &_e {
-            &:before {
-                @include bkg_img(
-                    "../../../public/images/places/cuba_map_min.jpg"
-                );
-            }
-        }
+        // &_e {
+        //     &:before {
+        //         @include bkg_img(
+        //             "../../../public/images/places/cuba_map_min.jpg"
+        //         );
+        //     }
+        // }
     }
 }
