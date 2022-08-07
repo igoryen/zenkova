@@ -18,6 +18,7 @@
 .my-tabs {
     width: 100%;
 }
+
 .my-tab-list {
     // border: 3px solid red;
     // align-items: center;
@@ -56,11 +57,14 @@
     }
 }
 
-.page__section_tabs {
-    p {
-        display: flex;
-        font-size: 1em;
-        padding: 1em;
+.MuiButtonBase-root {
+    font-family: "Jost", sans-serif !important;
+
+    &:hover {
+        background-color: $color1light !important;
+    }
+    &:active {
+        background-color: $color5light !important;
     }
 }
 
@@ -88,8 +92,8 @@
         //     }
         // }
     }
-    .page__section_tabs {
-        display: block !important;
+    .MuiButtonBase-root {
+        // font-size: 1em !important;
     }
 }
 @media only screen and (min-width: $width2ndSmall) {
@@ -117,7 +121,8 @@
         //     }
         // }
     }
-    .page__section_tabs {
-        display: none !important;
+
+    .MuiButtonBase-root {
+        font-size: 1em !important;
     }
 }
