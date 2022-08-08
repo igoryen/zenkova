@@ -78,6 +78,7 @@ class TourHabana extends React.Component {
                         autoPlay='true'
                         infinite='true'
                         autoPlayInterval='2000'
+                        autoPlayStrategy="all"
                         autoHeight='true'
                         responsive={responsivity}
                         disableButtonsControls='false'
