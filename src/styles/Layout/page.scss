@@ -37,6 +37,15 @@
                 }
             }
         }
+        &_c {
+            .element {
+                &.description {
+                    h2 {
+                        background-color: $color2pale;
+                    }
+                }
+            }
+        }
     }
 
     .element {
