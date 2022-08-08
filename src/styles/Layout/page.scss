@@ -18,6 +18,18 @@
         // background-color: $color5; // debug
     }
 
+    .page__section {
+        &_a {
+            .element {
+                &.description {
+                    h2 {
+                        background-color: $color5pale;
+                    }
+                }
+            }
+        }
+    }
+
     .element {
         // background-color: $color1; // debug
         margin: 1em 0;
@@ -25,12 +37,19 @@
         z-index: 1; // because of bkg img is semi-opaque.
 
         &.description {
+            h2 {
+                margin-top: 1em;
+                padding-left: 1em;
+                padding-right: 1em;
+                width: fit-content;
+            }
+            p {
+                line-height: 1.2;
+                margin-top: 0.5em;
+            }
             ul {
                 margin-left: 3em;
-            }
-            h2 {
-                background-color: $color5pale;
-                padding-left: 1em;
+                margin-top: 1em;
             }
         }
     }
