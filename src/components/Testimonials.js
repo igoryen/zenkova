@@ -295,8 +295,8 @@ class Testimonials extends React.Component {
                         // autoHeight='true'
                         responsive={responsivity}
                         disableButtonsControls='false'
-                    // paddingLeft="10"
-                    // paddingRight='10'
+                        paddingLeft='50'
+                        paddingRight='50'
                     />
                 </div>
 
