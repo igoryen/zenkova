@@ -46,6 +46,16 @@
                 }
             }
         }
+
+        &_d {
+            .element {
+                &.description {
+                    h2 {
+                        background-color: $color3pale;
+                    }
+                }
+            }
+        }
     }
 
     .element {
