@@ -1,11 +1,12 @@
 .testimonial {
     &__group {
         background-color: $color1; // debug
-        padding: 1em;
+        padding: 1em 0;
     }
     &__element {
         // background-color: $color2;
-        padding: 1em;
+        margin: 1em;
+        box-shadow: 5px 5px 1px 1px $color2;
 
         blockquote {
             background-color: $color4;
@@ -35,14 +36,14 @@
 @media only screen and (min-width: $widthSmallest) {
     .testimonial {
         &__element {
-            max-width: 300px;
+            // max-width: 300px;
         }
     }
 }
 @media only screen and (min-width: $width2ndSmall) {
     .testimonial {
         &__element {
-            max-width: 500px;
+            // max-width: 500px;
         }
     }
 }
