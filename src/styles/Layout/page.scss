@@ -23,6 +23,16 @@
         margin: 1em 0;
         max-width: 800px;
         z-index: 1; // because of bkg img is semi-opaque.
+
+        &.description {
+            ul {
+                margin-left: 3em;
+            }
+            h2 {
+                background-color: $color5pale;
+                padding-left: 1em;
+            }
+        }
     }
 
     .part {
