@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Testimonials from "../components/Testimonials";
 
 class Home extends React.Component {
@@ -31,6 +32,10 @@ class Home extends React.Component {
     render() {
         return (
             <div className="page home">
+                <Helmet>
+                    <title>Главная | Людмила Зенкова</title>
+                    <meta name="description" content="Людмила Зенкова - опытный русский экскурсовод на Кубе" />
+                </Helmet>
 
                 <section className="page__heading">
                     <div className="element heading">

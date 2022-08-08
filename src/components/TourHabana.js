@@ -14,6 +14,7 @@ import imgHemingway from "../images/slideshow/habana/hemingway.jpg";
 import imgNight from "../images/slideshow/habana/night.jpg";
 import imgQuixote from "../images/slideshow/habana/quixote.jpg";
 import imgTerraced from "../images/slideshow/habana/terraced_houses.jpg";
+import { Helmet } from "react-helmet";
 
 class TourHabana extends React.Component {
     constructor(props) {
@@ -68,6 +69,10 @@ class TourHabana extends React.Component {
 
         return (
             <section className="page__section page__section_a">
+                <Helmet>
+                    <title>Гавана | Людмила Зенкова</title>
+                    <meta name="description" content="Экскурсия по столице Кубы городу Гаване с русским экскурсоводом Людмилой Зенковой" />
+                </Helmet>
                 <div className="element heading">
                     <h2>Гавана</h2>
                 </div>

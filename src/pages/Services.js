@@ -2,6 +2,7 @@ import React from "react";
 import CarRide from "../components/CarRide";
 import Testimonials from "../components/Testimonials";
 import ResponsiveTabs from "../components/ResponsiveTabs";
+import { Helmet } from "react-helmet";
 
 class Services extends React.Component {
     constructor(props) {
@@ -30,6 +31,10 @@ class Services extends React.Component {
         return (
 
             <div className="page services">
+                <Helmet>
+                    <title>Услуги | Людмила Зенкова</title>
+                    <meta name="description" content="Экскурсии по городам Кубы с русским экскурсоводом Людмилой Зенковой" />
+                </Helmet>
 
                 <section className="page__heading">
                     <div className="element heading">

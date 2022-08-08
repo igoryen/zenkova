@@ -1,7 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
-
+import { Helmet } from "react-helmet";
 
 
 
@@ -73,6 +73,10 @@ class TourTrinCien extends React.Component {
 
         return (
             <section className="page__section page__section_d">
+                <Helmet>
+                    <title>Тринидад | Людмила Зенкова</title>
+                    <meta name="description" content="Экскурсия по Тринидаду и Сьенфуэгосу с русским экскурсоводом Людмилой Зенковой" />
+                </Helmet>
                 <div className="element heading">
                     <h2>Города Тринидад и Сьенфуэгос (450 &euro;)</h2>
                 </div>

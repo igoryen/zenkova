@@ -6,10 +6,16 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import NoPage from './pages/NoPage';
 import Contacts from './pages/Contacts';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <BrowserRouter>
+      <Helmet>
+        <title>Гид | Людмила Зенкова</title>
+        <meta name="description" content="Ваш русский гид на Кубе" />
+        <meta name="keywords" content='Куба, экскурсии, экскурсия, экскурсовод, гид, Гавана, Варадеро, Тринидад, русский, туризм, путешествие, отдых, отпуск' />
+      </Helmet>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

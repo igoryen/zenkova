@@ -1,6 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { Helmet } from "react-helmet";
 
 import imgSeverino from "../images/slideshow/matanzas/Castle-of-San-Severino-Matanzas-Cuba-18.jpg";
 import imgMatanzas1 from "../images/slideshow/matanzas/Matanzas_from_Ermita_de_Monserrate_church.jpg";
@@ -56,6 +57,10 @@ class TourMatanzas extends React.Component {
 
         return (
             <section className="page__section page__section_c">
+                <Helmet>
+                    <title>Матансас | Людмила Зенкова</title>
+                    <meta name="description" content="Экскурсия по кубинскому городу Матансас с русским экскурсоводом Людмилой Зенковой" />
+                </Helmet>
                 <div className="element heading">
                     <h2>Матáнсас</h2>
                 </div>

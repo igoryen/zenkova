@@ -1,6 +1,7 @@
 import React from "react";
 // import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { Helmet } from "react-helmet";
 
 // carousel for Habana
 // import imgCapitolio from "../images/slideshow/habana/capitolio.jpg";
@@ -68,6 +69,10 @@ class TourCaribes extends React.Component {
 
         return (
             <section className="page__section page__section_b">
+                <Helmet>
+                    <title>Карибы | Людмила Зенкова</title>
+                    <meta name="description" content="Экскурсия по Карибскому побережью Кубы с русским экскурсоводом Людмилой Зенковой" />
+                </Helmet>
                 <div className="element heading">
                     <h2>Карибы</h2>
                 </div>

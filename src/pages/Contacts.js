@@ -5,6 +5,7 @@ import logoGmail from "../../src/svg/google-gmail-seeklogo.com.svg";
 import logoInstagram from "../../src/svg/instagram-svgrepo-com.svg";
 import logoFB from "../../src/svg/facebook-seeklogo.com.svg";
 import logoVK from "../../src/svg/vkontakte-seeklogo.com.svg";
+import { Helmet } from "react-helmet";
 
 class Contacts extends React.Component {
     constructor(props) {
@@ -36,6 +37,10 @@ class Contacts extends React.Component {
     render() {
         return (
             <div className="page Contacts">
+                <Helmet>
+                    <title>Контакты | Людмила Зенкова</title>
+                    <meta name="description" content="Как связаться с русским экскурсоводом на Кубе Людмилой Зенковой" />
+                </Helmet>
 
                 <section className="page__heading">
                     <div className="element heading">
