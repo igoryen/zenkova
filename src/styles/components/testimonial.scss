@@ -1,15 +1,14 @@
 .testimonial {
     &__group {
-        // background-color: $color1; // debug
+        background-color: $color1; // debug
         padding: 1em;
     }
     &__element {
-        background-color: $color2;
+        // background-color: $color2;
         padding: 1em;
 
         blockquote {
-            background-color: $color1;
-            // font-family: "Caveat", cursive;
+            background-color: $color4;
             font-size: 1em;
             line-height: 1.2;
             padding: 1em;
@@ -17,14 +16,18 @@
     }
 
     &__author {
-        background-color: $color3;
+        background-color: $color4;
         display: flex;
-        padding: 1em;
+        justify-content: end;
+        // padding: 1em;
 
         > div {
             background-color: $color4;
-            padding: 0.5em;
-            margin: 0.5em;
+            padding: 0 0.5em 0.5em;
+            margin: 0 0.5em 0.5em;
+        }
+        &_photo {
+            display: none;
         }
     }
 }
