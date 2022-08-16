@@ -1,57 +1,38 @@
 import "../styles/mainStyle.scss";
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux';
+import { switchToPage } from "../features/mainNav/mainNavSlice";
 
-class MainNav extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            color: "#f8f8ff"
-        }
-    }
 
-    componentDidMount() {
+const menuItems = [
+    { itemId: 'home', itemName: 'Главная', itemLink: '' },
+    { itemId: 'services', itemName: 'Услуги', itemLink: 'services' },
+    { itemId: 'contacts', itemName: 'Контакты', itemLink: 'contacts' },
+];
 
-        // document.body.classList.add('dan');
-        // Changing the state after 2 sec
-        // from the time when the component
-        // is rendered
-        // setTimeout(() => {
-        //     this.setState({
-        //         color: 'white'
-        //     });
-        // }, 2000);
-    }
 
-    componentWillUnmount() {
-        // document.body.classList.remove('dan');
+export function MainNav() {
 
-        console.log("UNMOUNT", this.props);
-    }
+    const currentPageIs = useSelector((state) => state.mainNav.currentPage);
+    const dispatch = useDispatch();
 
-    render() {
-        return (
-            <div>
-                <nav className="main-nav">
-
-                    <ul>
-                        <li className="link-a">
-                            <Link to="/">Главная</Link>
+    return (
+        <div>
+            <nav className="main-nav">
+                <ul>
+                    {menuItems.map(menuItem =>
+                        <li key={menuItem.itemId} className={currentPageIs === menuItem.itemId ? ('link active ' + menuItem.itemId) : ('link inactive ' + menuItem.itemId)}>
+                            <Link
+                                to={menuItem.itemLink}
+                                onClick={() => dispatch(switchToPage(menuItem.itemId))}
+                            >
+                                {menuItem.itemName}
+                            </Link>
                         </li>
-                        <li className="link-b">
-                            <Link to="/services">Услуги</Link>
-                        </li>
-                        <li className="link-c">
-                            <Link to="/contacts">Контакты</Link>
-                        </li>
-
-
-
-                    </ul>
-                </nav>
-            </div>
-        );
-    }
+                    )}
+                </ul>
+            </nav>
+        </div>
+    );
 }
-
-export default MainNav;

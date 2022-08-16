@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import React from "react";
-import MainNav from "../components/MainNav";
+import { MainNav } from "../components/MainNav";
 
 
 class Layout extends React.Component {

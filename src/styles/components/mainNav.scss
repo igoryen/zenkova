@@ -24,8 +24,20 @@
             justify-content: center;
             text-decoration: none;
         }
+        &.link {
+            &.active {
+                a {
+                    color: white;
+                }
+            }
+            &.inactive {
+                a {
+                    color: black;
+                }
+            }
+        }
 
-        &.link-a {
+        &.home {
             a {
                 background-color: $color2;
                 &:hover {
@@ -33,7 +45,7 @@
                 }
             }
         }
-        &.link-b {
+        &.services {
             a {
                 background-color: $color5;
                 &:hover {
@@ -41,7 +53,7 @@
                 }
             }
         }
-        &.link-c {
+        &.contacts {
             a {
                 background-color: $color3;
                 &:hover {

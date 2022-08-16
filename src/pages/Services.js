@@ -1,56 +1,68 @@
-import React from "react";
+import { React, useEffect } from "react";
 import CarRide from "../components/CarRide";
 import Testimonials from "../components/Testimonials";
 import ResponsiveTabs from "../components/ResponsiveTabs";
 import { Helmet } from "react-helmet";
 
-class Services extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            color: "#f8f8ff"
-        }
-    }
+import { useDispatch } from 'react-redux';
+import { switchToPage } from "../features/mainNav/mainNavSlice";
 
-    componentDidMount() {
-        document.body.classList.add('Services');
-    }
+export function Services() {
 
-    componentWillUnmount() {
-        document.body.classList.remove('Services');
-    }
 
-    resetFormElement = function (e) {
-        console.log("reset from inside")
-        e.wrap('<form>').closest('form').get(0).reset();
-        e.unwrap();
-    }
+    const dispatch = useDispatch();
 
-    render() {
+    useEffect(() => {
+        console.log("useEffect on p Services");
+        dispatch(switchToPage('services'))
+    });
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         color: "#f8f8ff"
 
-        return (
+    //     }
+    // }
 
-            <div className="page services">
-                <Helmet>
-                    <title>Услуги | Людмила Зенкова</title>
-                    <meta name="description" content="Экскурсии по городам Кубы с русским экскурсоводом Людмилой Зенковой" />
-                </Helmet>
+    // componentDidMount() {
+    //     document.body.classList.add('Services');
+    // }
 
-                <section className="page__heading">
-                    <div className="element heading">
-                        <h1>Экскурсии</h1>
-                    </div>
-                </section>
+    // componentWillUnmount() {
+    //     document.body.classList.remove('Services');
+    // }
 
-                <CarRide />
+    // resetFormElement = function (e) {
+    //     console.log("reset from inside")
+    //     e.wrap('<form>').closest('form').get(0).reset();
+    //     e.unwrap();
+    // }
 
-                <ResponsiveTabs />
+    // render() {
 
-                <Testimonials />
+    return (
 
-            </div>
-        );
-    };
-}
+        <div className="page services">
+            <Helmet>
+                <title>Услуги | Людмила Зенкова</title>
+                <meta name="description" content="Экскурсии по городам Кубы с русским экскурсоводом Людмилой Зенковой" />
+            </Helmet>
 
-export default Services;
+            <section className="page__heading">
+                <div className="element heading">
+                    <h1>Экскурсии</h1>
+                </div>
+            </section>
+
+            <CarRide />
+
+            <ResponsiveTabs />
+
+            <Testimonials />
+
+        </div>
+    );
+};
+// }
+
+// export default Services;
