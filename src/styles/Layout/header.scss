@@ -1,0 +1,44 @@
+header {
+    section {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+
+        div {
+            // margin: 1em;
+            color: $color4;
+
+            padding: 0 1em;
+            text-shadow: 1px 1px 3px black;
+        }
+    }
+}
+
+@media only screen and (min-width: $widthSmallest) {
+    header {
+        section {
+            padding: 0.2em 1em;
+            img {
+                // border: 1px solid red;
+                width: 2em;
+            }
+            div {
+                font-size: 1em;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $width2ndSmall) {
+    header {
+        section {
+            padding: 0.2em 2em;
+            img {
+                // border: 1px solid red;
+                width: 3em;
+            }
+            div {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

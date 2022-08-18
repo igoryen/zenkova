@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import React from "react";
 import { MainNav } from "../components/MainNav";
+import imgAuthor from '../images/author-310x310.png'
 
 
 class Layout extends React.Component {
@@ -26,7 +27,10 @@ class Layout extends React.Component {
             <div className="layout">
                 <div className="header-body-footer">
                     <header>
-                        HEADER
+                        <section>
+                            <img src={imgAuthor} alt="author" />
+                            <div>Людмила Зенкова | русский гид на Кубе</div>
+                        </section>
                     </header>
                     <MainNav />
                     <div className="layout-outlet">
