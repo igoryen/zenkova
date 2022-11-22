@@ -1,6 +1,4 @@
-import * as React from 'react';
 import { useEffect } from 'react';
-// import { React, useEffect } from "react";
 import CarRide from "../components/CarRide";
 import Testimonials from "../components/Testimonials";
 import ResponsiveTabs from "../components/ResponsiveTabs";

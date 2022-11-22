@@ -68,13 +68,13 @@ class TourMatanzas extends React.Component {
                 <div className="my-carousel">
                     <AliceCarousel mouseTracking
                         items={itemsMatanzas}
-                        autoPlay='true'
-                        infinite='true'
-                        autoPlayInterval='2000'
+                        autoPlay={!!'true'}
+                        infinite={!!'true'}
+                        autoPlayInterval={2000}
                         autoPlayStrategy="all"
-                        autoHeight='true'
+                        autoHeight={!!'true'}
                         responsive={responsivity}
-                        disableButtonsControls='false'
+                        disableButtonsControls={!!'false'}
                     // paddingLeft="10"
                     // paddingRight='10'
                     />

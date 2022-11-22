@@ -3,5 +3,9 @@
         "esModuleInterop": true,
         //"jsx": "react", // 1
         "jsx": "react-jsx" // 2
-    }
+    },
+    "include": [
+        "src",
+        "src/declaration.d.ts",
+    ]
 }

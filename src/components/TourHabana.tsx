@@ -2,11 +2,6 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-declare module "*.jpg" {
-    const value: any;
-    export = value;
-}
-
 // carousel for Habana
 import imgCapitolio from "../images/slideshow/habana/capitolio.jpg";
 import imgCastillio from "../images/slideshow/habana/castillo.jpg";
@@ -85,13 +80,13 @@ class TourHabana extends React.Component {
                 <div className="my-carousel">
                     <AliceCarousel mouseTracking
                         items={itemsHabana}
-                        autoPlay='true'
-                        infinite='true'
-                        autoPlayInterval='2000'
+                        autoPlay={!!'true'}
+                        infinite={!!'true'}
+                        autoPlayInterval={2000}
                         autoPlayStrategy="all"
-                        autoHeight='true'
+                        autoHeight={!!'true'}
                         responsive={responsivity}
-                        disableButtonsControls='false'
+                        disableButtonsControls={!!'false'}
                     // paddingLeft="10"
                     // paddingRight='10'
                     />

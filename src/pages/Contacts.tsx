@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { useEffect } from 'react';
 import Testimonials from "../components/Testimonials";
 import logoWhatsApp from "../../src/svg/whatsapp-icon-seeklogo.com.svg";
 import logoGmail from "../../src/svg/google-gmail-seeklogo.com.svg";
