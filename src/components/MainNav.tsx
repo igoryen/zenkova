@@ -14,7 +14,7 @@ const menuItems = [
 
 export function MainNav() {
 
-    const currentPageIs = useSelector((state) => state.mainNav.currentPage);
+    const currentPageIs = useSelector((state: any) => state.mainNav.currentPage);
     const dispatch = useDispatch();
 
     return (

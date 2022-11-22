@@ -7,6 +7,7 @@ import { Services } from './pages/Services';
 import NoPage from './pages/NoPage';
 import { Contacts } from './pages/Contacts';
 import { Helmet } from 'react-helmet';
+import React from 'react';
 
 function App() {
   return (

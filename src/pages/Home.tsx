@@ -1,4 +1,6 @@
-import { React, useEffect } from "react";
+import * as React from 'react';
+import { useEffect } from 'react';
+// import { React, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Testimonials from "../components/Testimonials";
 

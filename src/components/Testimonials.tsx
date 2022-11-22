@@ -135,15 +135,15 @@ class Testimonials extends React.Component {
                 <div className="my-carousel">
                     <AliceCarousel mouseTracking
                         items={itemsQuotes}
-                        autoPlay='true'
-                        infinite='true'
-                        autoPlayInterval='2000'
+                        autoPlay={!!'true'}
+                        infinite={!!'true'}
+                        autoPlayInterval={2000}
                         // autoPlayStrategy="all"
                         // autoHeight='true'
                         responsive={responsivity}
-                        disableButtonsControls='false'
-                        paddingLeft='50'
-                        paddingRight='50'
+                        disableButtonsControls={!!'false'}
+                        paddingLeft={50}
+                        paddingRight={50}
                     />
                 </div>
 

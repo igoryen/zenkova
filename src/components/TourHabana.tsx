@@ -2,6 +2,11 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
 
+declare module "*.jpg" {
+    const value: any;
+    export = value;
+}
+
 // carousel for Habana
 import imgCapitolio from "../images/slideshow/habana/capitolio.jpg";
 import imgCastillio from "../images/slideshow/habana/castillo.jpg";
