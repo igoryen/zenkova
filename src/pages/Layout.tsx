@@ -37,7 +37,7 @@ class Layout extends React.Component {
                         <Outlet />
                     </div>
                     <footer>
-                        FOOTER
+                        Made by <a href="https://igoryen.netlify.app/">igoryen</a>
                     </footer>
                 </div>
             </div>
